@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: antiquewhite;
+            margin: 2px;
+            padding: 2px;
+            border: 2px solid black;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aqua;
+            border: 1px solid var(--primary-color);
+            height: 450px;
+            width: var(--custom-width);
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: 20px 30px brown; */
+            /* box-shadow: 20px 10px 50px brown; */
+            /* box-shadow: 20px 10px 50px 20px pink; */
+            /* box-shadow: inset 20px 20px  brown; */
+            box-shadow: 10px 20px var(--primary-color),20px 30px green;
+        }
+        img{
+            height: 200px;
+            width: 330px;
+        }
+        #head1{
+            /* text-shadow: 2px 3px 2px white; */
+            /* text-shadow: yellow 2px 3px 2px; */
+            /* text-shadow: white 2px 3px; */
+            /* text-shadow: 2px 3px; */
+            text-shadow: red 2px 4px,yellow 4px 8px,blue 6px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img4.jpg" />
+            <h1 id="head1">This is Doctor Strange</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, eaque laudantium asperiores vel
+                praesentium, eligendi deleniti et cumque velit corrupti commodi officia nulla ut tenetur reiciendis
+                aspernatur ad facilis totam expedita natus quae quos? Culpa assumenda ad accusamus enim sed minima!
+                Consequuntur facere sed modi sint earum illum possimus quibusdam. Odio fugiat corrupti saepe id
+                reprehenderit, ipsa earum est adipisci!</p>
+        </div>
+    </div>
+</body>
+
+</html>
